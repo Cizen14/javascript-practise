@@ -106,3 +106,15 @@
 // create call , invoke
 
 // if you dont put {} you dont need to write return. but you do you need to write the written.
+
+
+
+//Array
+//old  way
+// const fruits = new Array('apples', 'mapples', 'banana');
+// console.log(fruits);
+
+//new way to do array.
+
+const fruits =[ 'apples', 'mapples', 'banana']
+console.log(fruits);
