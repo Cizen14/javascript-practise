@@ -197,25 +197,25 @@
 // console.log(fruits.includes('apple' || 'mango'));
 
 
-//every 
+                        //every 
 
 // console.log(fruits.every(element => fruits.length > 2 ));
 
-// //some
+//                      //some
 // console.log(fruits.some(element => fruits.includes('a') ));
 
 
-//filter
+                        //filter
 // const filteredFruits = fruits.filter(element => element.length>5);
 // console.log(filteredFruits);
 
-//find
+                    //find
 // const filteredFruits = fruits.find(element => element.length>5);
 // console.log(filteredFruits);
 
 //reduce
 
-//for loop
+                            //for loop
 // let arr = [2,4,6,8] 
 // let sum=0 
 // for(i=0; i<arr.length; i++ ) {
@@ -234,7 +234,7 @@
 // // }
 // // console.log(multiply);
 
-// //for each
+//                          //for each
 
 // x.forEach(element => {
 //     sum=sum+element;
@@ -244,15 +244,47 @@
 // console.log(sum);
 
                                 
-                                //reduce
+                                //reduce  
 
-        const arrayOfNums = [ 1,2,3,4,5,6];
+        // const arrayOfNums = [ 1,2,3,4,5,6];
 
-        let sum =1
+        // let sum =1
 
-        const result= arrayOfNums.reduce((previousValue, currentValue)=>
-        previousValue* currentValue ,1
-        );
-        console.log(result);
+        // const result= arrayOfNums.reduce((previousValue, currentValue)=>
+        // previousValue* currentValue ,1
+        // );
+        // console.log(result);
 
 
+
+        // create an array of 50 random numbers range between 1 to 100 programmatically
+
+
+ 
+        // debugger;
+let randomNumberArray = [45, 47, 27];
+// lenght - > 50
+
+while(randomNumberArray.length < 50) {
+
+    const randomNumber = Math.floor(Math.random() * (100-1) + 1); //27
+
+    if(!randomNumberArray.includes(randomNumber)){
+
+        randomNumberArray.push(randomNumber);
+    }
+
+}
+
+// for(let i=0; randomNumberArray.length < 50; i++){
+
+//     const randomNumber = Math.floor(Math.random() * (100-1) + 1); //27
+
+//     if(!randomNumberArray.includes(randomNumber)){
+
+//         randomNumberArray.push(randomNumber);
+//     }
+    
+// }
+
+console.log(randomNumberArray);
