@@ -116,39 +116,39 @@
 
 //new way to do array.
 
-const fruits =[ 'apples', 'mapples', 'banana']
-console.log(fruits);
-console.log(fruits[1]); // access
-console.log(fruits.length); // check the length.
+// const fruits =[ 'apples', 'mapples', 'banana']
+// console.log(fruits);
+// console.log(fruits[1]); // access
+// console.log(fruits.length); // check the length.
 
-fruits[3]='pineapple'; // this element is for adding new element.
-//push will add the element in the last.
-fruits.push('cherry');
+// fruits[3]='pineapple'; // this element is for adding new element.
+// //push will add the element in the last.
+// fruits.push('cherry');
 
 
 //to remove the element it removes the last element no need to put the value.
 
-fruits.pop();
-console.log(fruits);
+// fruits.pop();
+// console.log(fruits);
 
-// to remove the element where first param is the one where the delete number starts and the scond param means the number of elements to delete.
-//we can add the element in the splice as well where you need to put the name in the 3rd param
+// // to remove the element where first param is the one where the delete number starts and the scond param means the number of elements to delete.
+// //we can add the element in the splice as well where you need to put the name in the 3rd param
 
-fruits.splice(0,2);
-console.log(fruits);
+// fruits.splice(0,2);
+// console.log(fruits);
 
 //to remove first element
 
-fruits.shift();
-console.log(fruits);
-fruits.unshift('apple') // to add the first elmenet
-console.log(fruits);
+// fruits.shift();
+// console.log(fruits);
+// fruits.unshift('apple') // to add the first elmenet
+// console.log(fruits);
 
 
-//IndexOf to know the index number 
+// //IndexOf to know the index number 
 
-console.log(fruits.indexOf('kiwi'))
-console.log(fruits);
+// console.log(fruits.indexOf('kiwi'))
+// console.log(fruits);
 
                             // mutation array means the orginal array is getting updated evertime.
 // concat
@@ -158,39 +158,39 @@ console.log(fruits);
 
 
 // how to remove the mutating the original array.
-console.log(fruits);
-console.log(...fruits);
-const newFruits = [...fruits];
-newFruits.push("berries");
-console.log(newFruits);
+// console.log(fruits);
+// console.log(...fruits);
+// const newFruits = [...fruits];
+// newFruits.push("berries");
+// console.log(newFruits);
 
-console.log(fruits);
+// console.log(fruits);
 
-//writing a loop for fruits to make it all uppercase
-
-
-
-let uppercaseFruits=[];
-for(let i=0; i<fruits.length; i++){
-    console.log(fruits[i].toUpperCase());
-    uppercaseFruits.push(
-        fruits[i].toUpperCase()
-    )
-}
-console.log(uppercaseFruits);
+// //writing a loop for fruits to make it all uppercase
 
 
-fruits.forEach(i=>{
-    console.log(i);
-})
 
-// map
+// let uppercaseFruits=[];
+// for(let i=0; i<fruits.length; i++){
+//     console.log(fruits[i].toUpperCase());
+//     uppercaseFruits.push(
+//         fruits[i].toUpperCase()
+//     )
+// }
+// console.log(uppercaseFruits);
 
-const mappedFruits = fruits.map(fruit=>
-    fruit.toUpperCase()
+
+// fruits.forEach(i=>{
+//     console.log(i);
+// })
+
+// // map
+
+// const mappedFruits = fruits.map(fruit=>
+//     fruit.toUpperCase()
     
-)
-console.log(mappedFruits);
+// // )
+// console.log(mappedFruits);
 
 
 //includes it checks whether it has in the element or not
@@ -199,9 +199,60 @@ console.log(mappedFruits);
 
 //every 
 
-console.log(fruits.every(element => fruits.length > 2 ));
+// console.log(fruits.every(element => fruits.length > 2 ));
 
-//some
-console.log(fruits.some(element => fruits.includes('a') ));
+// //some
+// console.log(fruits.some(element => fruits.includes('a') ));
+
+
+//filter
+// const filteredFruits = fruits.filter(element => element.length>5);
+// console.log(filteredFruits);
+
+//find
+// const filteredFruits = fruits.find(element => element.length>5);
+// console.log(filteredFruits);
+
+//reduce
+
+//for loop
+// let arr = [2,4,6,8] 
+// let sum=0 
+// for(i=0; i<arr.length; i++ ) {
+   
+//    sum = sum + arr[i]
+// }
+// console.log(sum);
+
+
+
+// let x=[1,2,3,4,5];
+// let sum = 0
+// // for (let i=0; i<x.length-1; i++){
+
+// //     sum = multiply*x[i];
+// // }
+// // console.log(multiply);
+
+// //for each
+
+// x.forEach(element => {
+//     sum=sum+element;
+
+    
+// });
+// console.log(sum);
+
+                                
+                                //reduce
+
+        const arrayOfNums = [ 1,2,3,4,5,6];
+
+        let sum =1
+
+        const result= arrayOfNums.reduce((previousValue, currentValue)=>
+        previousValue* currentValue ,1
+        );
+        console.log(result);
 
 
